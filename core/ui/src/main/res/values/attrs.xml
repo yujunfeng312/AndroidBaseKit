@@ -1,0 +1,9 @@
+<resources>
+    <declare-styleable name="LoadingTextView">
+        <attr name="ltv_loadingText" format="string" />
+        <attr name="ltv_indicatorSize" format="dimension" />
+        <attr name="ltv_indicatorColor" format="color" />
+        <attr name="ltv_indicatorPadding" format="dimension" />
+        <attr name="ltv_autoLoadingOnClick" format="boolean" />
+    </declare-styleable>
+</resources>

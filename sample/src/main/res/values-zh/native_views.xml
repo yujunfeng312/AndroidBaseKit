@@ -1,0 +1,13 @@
+<resources>
+    <string name="native_dialer_letters">DialerFilter 字母</string>
+    <string name="native_dialer_digits">DialerFilter 数字</string>
+    <string name="native_drawer_handle">点击或拖动抽屉把手</string>
+    <string name="native_drawer_content">旧版 SlidingDrawer 内容</string>
+    <string name="native_views_title">原生 View 控件图鉴</string>
+    <string name="native_search">搜索 View / 类别</string>
+    <string name="native_no_results">没有匹配的控件</string>
+    <string name="native_stub_loaded">ViewStub 已加载：layoutResource 替换占位控件。</string>
+    <string name="native_catalog_summary">%1$d 个分类 · %2$d 个控件</string>
+    <string name="native_catalog_section_count">%1$d 项</string>
+    <string name="native_catalog_class_suffix">（%1$s）</string>
+</resources>

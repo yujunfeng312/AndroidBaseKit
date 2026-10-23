@@ -1,0 +1,8 @@
+<resources>
+    <dimen name="template_spacing">24dp</dimen>
+    <dimen name="template_gap">16dp</dimen>
+    <dimen name="template_title_size">28sp</dimen>
+    <dimen name="template_body_size">16sp</dimen>
+    <dimen name="template_zero">0dp</dimen>
+    <dimen name="template_welcome_image_height">240dp</dimen>
+</resources>

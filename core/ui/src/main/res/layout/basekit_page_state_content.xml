@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:gravity="center" android:padding="@dimen/basekit_state_padding">
+    <ProgressBar android:id="@+id/basekit_state_progress" android:layout_width="@dimen/basekit_state_progress_size" android:layout_height="@dimen/basekit_state_progress_size" />
+    <ImageView android:id="@+id/basekit_state_icon" android:layout_width="@dimen/basekit_state_icon_size" android:layout_height="@dimen/basekit_state_icon_size" android:contentDescription="@null" />
+    <TextView android:id="@+id/basekit_state_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/basekit_state_spacing"
+        android:maxWidth="@dimen/basekit_state_max_width" android:gravity="center" android:textColor="@color/color_main_title" android:textStyle="bold" android:textSize="@dimen/basekit_state_message_size" android:accessibilityLiveRegion="polite" />
+    <TextView android:id="@+id/basekit_state_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/basekit_state_spacing"
+        android:maxWidth="@dimen/basekit_state_max_width" android:gravity="center" android:textColor="@color/color_sub_title" android:textSize="@dimen/basekit_state_hint_size" />
+    <Button android:id="@+id/basekit_state_retry" android:layout_width="wrap_content" android:layout_height="@dimen/basekit_state_button_height"
+        android:layout_marginTop="@dimen/basekit_state_spacing" android:text="@string/basekit_retry" android:textAllCaps="false" android:backgroundTint="@color/color_primary" android:textColor="@color/color_on_primary" />
+</LinearLayout>

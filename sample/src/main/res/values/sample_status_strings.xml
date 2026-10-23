@@ -1,0 +1,8 @@
+<resources>
+<string name="basekit_loading">加载中…</string><string name="basekit_empty">暂无数据</string>
+<string name="basekit_error">加载失败</string><string name="basekit_retry">重试</string>
+
+<string name="basekit_loading_hint">请稍候，正在准备内容。</string>
+<string name="basekit_empty_hint">有内容后会显示在这里。</string>
+<string name="basekit_error_hint">点击重试，重新加载内容。</string>
+</resources>

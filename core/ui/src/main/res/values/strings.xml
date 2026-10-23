@@ -1,0 +1,8 @@
+<resources>
+<string name="basekit_loading">Loading…</string><string name="basekit_empty">No items</string>
+<string name="basekit_error">Something went wrong</string><string name="basekit_retry">Retry</string>
+
+<string name="basekit_loading_hint">Please wait a moment.</string>
+<string name="basekit_empty_hint">Content will appear here when available.</string>
+<string name="basekit_error_hint">Try again to reload the content.</string>
+</resources>

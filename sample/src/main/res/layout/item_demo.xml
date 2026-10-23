@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/native_catalog_gap_small"
+    android:padding="@dimen/template_gap" android:gravity="center_vertical"
+    android:background="@drawable/native_catalog_card">
+    <ImageView android:id="@+id/image" android:layout_width="@dimen/hub_image_size"
+        android:layout_height="@dimen/hub_image_size" android:contentDescription="@null" android:scaleType="centerCrop" />
+    <LinearLayout android:layout_width="@dimen/template_zero" android:layout_height="wrap_content"
+        android:layout_weight="1" android:layout_marginStart="@dimen/native_catalog_gap_medium" android:orientation="vertical">
+        <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="@dimen/template_body_size" android:textColor="@color/color_main_title" android:maxLines="2" android:ellipsize="end" />
+        <TextView android:id="@+id/subtitle" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/native_catalog_gap_small" android:textSize="@dimen/native_catalog_detail_size" android:textColor="@color/color_sub_title" />
+    </LinearLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/native_catalog_arrow"
+        android:textColor="@color/color_icon_secondary" android:textSize="@dimen/native_catalog_arrow_size" android:importantForAccessibility="no" />
+</LinearLayout>

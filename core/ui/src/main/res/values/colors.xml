@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Semantic colors: applications may override the same resource names. -->
+    <color name="color_primary">#3F51B5</color>
+    <color name="color_primary_variant">#303F9F</color>
+    <color name="color_on_primary">#FFFFFF</color>
+    <color name="color_secondary">#006C67</color>
+    <color name="color_on_secondary">#FFFFFF</color>
+    <color name="color_main_title">#212121</color>
+    <color name="color_sub_title">#616161</color>
+    <color name="color_body">#424242</color>
+    <color name="color_hint">#757575</color>
+    <color name="color_disabled">#9E9E9E</color>
+    <color name="color_link">#3046A4</color>
+    <color name="color_background">#F5F5F5</color>
+    <color name="color_surface">#FFFFFF</color>
+    <color name="color_background_secondary">#EEEEEE</color>
+    <color name="color_divider">#E0E0E0</color>
+    <color name="color_border">#BDBDBD</color>
+    <color name="color_icon">#616161</color>
+    <color name="color_icon_secondary">#757575</color>
+    <color name="color_success">#1B6B35</color>
+    <color name="color_success_background">#E8F5E9</color>
+    <color name="color_warning">#895000</color>
+    <color name="color_warning_background">#FFF3E0</color>
+    <color name="color_error">#B3261E</color>
+    <color name="color_error_background">#FCE9E7</color>
+    <color name="color_info">#005B9F</color>
+    <color name="color_info_background">#E3F2FD</color>
+    <color name="color_scrim">#66000000</color>
+
+    <!-- Literal colors stay constant in both themes. Prefer semantic names for UI. -->
+    <color name="color_white">#FFFFFF</color>
+    <color name="color_black">#000000</color>
+    <color name="color_transparent">#00000000</color>
+</resources>

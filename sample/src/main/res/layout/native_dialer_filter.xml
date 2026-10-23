@@ -1,0 +1,12 @@
+<DialerFilter xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <EditText android:id="@android:id/hint" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="@string/native_dialer_letters"
+            android:inputType="text" android:importantForAutofill="no" />
+        <EditText android:id="@android:id/primary" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="@string/native_dialer_digits"
+            android:inputType="phone" android:importantForAutofill="no" />
+    </LinearLayout>
+</DialerFilter>

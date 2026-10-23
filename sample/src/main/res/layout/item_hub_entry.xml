@@ -1,0 +1,10 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="wrap_content"
+    android:orientation="vertical" android:background="@drawable/native_catalog_card" android:padding="@dimen/hub_hero_padding" android:layout_marginBottom="@dimen/template_gap">
+    <TextView android:id="@+id/tag" android:layout_width="match_parent" android:layout_height="wrap_content" android:textSize="@dimen/native_catalog_detail_size" android:textColor="@color/color_primary" />
+    <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/native_catalog_gap_small"
+        android:textSize="@dimen/native_catalog_name_size" android:textStyle="bold" android:textColor="@color/color_main_title" />
+    <TextView android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/native_catalog_gap_small"
+        android:textSize="@dimen/native_catalog_section_size" android:textColor="@color/color_sub_title" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/template_gap"
+        android:text="@string/hub_open" android:textSize="@dimen/native_catalog_section_size" android:textColor="@color/color_primary" android:importantForAccessibility="no" />
+</LinearLayout>

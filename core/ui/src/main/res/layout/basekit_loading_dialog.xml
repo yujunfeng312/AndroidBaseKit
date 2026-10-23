@@ -1,0 +1,4 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:orientation="vertical" android:gravity="center" android:padding="@dimen/basekit_state_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+<ProgressBar android:layout_width="@dimen/basekit_state_progress_size" android:layout_height="@dimen/basekit_state_progress_size" />
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/basekit_state_spacing" android:textColor="@color/color_main_title" android:textSize="@dimen/basekit_state_hint_size" android:text="@string/basekit_loading" />
+</LinearLayout>

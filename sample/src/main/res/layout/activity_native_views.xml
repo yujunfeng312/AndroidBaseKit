@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/color_background" android:orientation="vertical">
+    <com.google.android.material.appbar.MaterialToolbar android:id="@+id/toolbar"
+        android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"
+        app:title="@string/native_views_title" app:titleTextColor="@color/color_main_title"
+        app:navigationIcon="@drawable/native_catalog_back" app:navigationContentDescription="@string/go_back" />
+    <TextView android:id="@+id/summary" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:paddingHorizontal="@dimen/template_gap"
+        android:textColor="@color/color_sub_title" android:textSize="@dimen/native_catalog_section_size" />
+    <SearchView android:id="@+id/search" android:layout_width="match_parent"
+        android:layout_height="@dimen/native_catalog_search_height"
+        android:layout_marginHorizontal="@dimen/template_gap"
+        android:layout_marginTop="@dimen/native_catalog_gap_medium"
+        android:layout_marginBottom="@dimen/native_catalog_gap_small"
+        android:paddingHorizontal="@dimen/native_catalog_gap_small"
+        android:background="@drawable/native_catalog_search" android:queryBackground="@color/color_transparent"
+        android:iconifiedByDefault="false" android:queryHint="@string/native_search" />
+    <ListView android:id="@+id/catalog" android:layout_width="match_parent"
+        android:layout_height="@dimen/template_zero" android:layout_weight="1"
+        android:paddingHorizontal="@dimen/template_gap" android:paddingBottom="@dimen/template_spacing"
+        android:clipToPadding="false" android:divider="@color/color_transparent"
+        android:dividerHeight="@dimen/native_catalog_gap_small" android:listSelector="@color/color_transparent" />
+    <TextView android:id="@+id/empty" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:padding="@dimen/template_spacing"
+        android:gravity="center" android:textColor="@color/color_sub_title"
+        android:text="@string/native_no_results" android:visibility="gone" />
+</LinearLayout>

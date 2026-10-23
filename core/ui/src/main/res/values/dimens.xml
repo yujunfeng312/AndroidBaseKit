@@ -1,0 +1,13 @@
+<resources>
+    <dimen name="basekit_loading_indicator_size">18dp</dimen>
+    <dimen name="basekit_loading_indicator_padding">8dp</dimen>
+    <dimen name="basekit_loading_indicator_stroke">2dp</dimen>
+    <dimen name="basekit_state_spacing">16dp</dimen>
+    <dimen name="basekit_state_padding">24dp</dimen>
+    <dimen name="basekit_state_icon_size">56dp</dimen>
+    <dimen name="basekit_state_progress_size">40dp</dimen>
+    <dimen name="basekit_state_button_height">48dp</dimen>
+    <dimen name="basekit_state_message_size">17sp</dimen>
+    <dimen name="basekit_state_hint_size">14sp</dimen>
+    <dimen name="basekit_state_max_width">320dp</dimen>
+</resources>

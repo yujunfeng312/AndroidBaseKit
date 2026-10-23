@@ -1,0 +1,4 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/demo_graph" app:startDestination="@id/demo">
+<fragment android:id="@+id/demo" android:name="dev.androidbasekit.sample.view.fragment.DemoFragment"><action android:id="@+id/action_demo_to_details" app:destination="@id/details" /></fragment>
+<fragment android:id="@+id/details" android:name="dev.androidbasekit.sample.view.fragment.DetailsFragment" />
+</navigation>

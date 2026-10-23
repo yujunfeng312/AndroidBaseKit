@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <Button android:id="@+id/back" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:text="@string/go_back" />
+    <TextView android:id="@+id/title" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:paddingHorizontal="@dimen/template_gap"
+        android:textSize="@dimen/template_title_size" android:accessibilityHeading="true" />
+    <ScrollView android:id="@+id/scroll" android:layout_width="match_parent"
+        android:layout_height="@dimen/template_zero" android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout android:id="@+id/examples" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:orientation="vertical"
+            android:padding="@dimen/template_gap" android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true" />
+    </ScrollView>
+</LinearLayout>

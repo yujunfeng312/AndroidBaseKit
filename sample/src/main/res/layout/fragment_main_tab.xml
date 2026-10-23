@@ -1,0 +1,10 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="@dimen/template_gap">
+        <TextView android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:textSize="@dimen/template_title_size" android:textStyle="bold" android:textColor="@color/color_main_title" />
+        <TextView android:id="@+id/description" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/native_catalog_gap_small" android:layout_marginBottom="@dimen/template_spacing"
+            android:textSize="@dimen/native_catalog_section_size" android:textColor="@color/color_sub_title" />
+        <LinearLayout android:id="@+id/cards" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+    </LinearLayout>
+</ScrollView>

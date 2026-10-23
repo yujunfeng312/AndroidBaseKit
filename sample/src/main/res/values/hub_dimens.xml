@@ -1,0 +1,9 @@
+<resources>
+    <dimen name="hub_action_height">48dp</dimen>
+    <dimen name="hub_hero_padding">20dp</dimen>
+    <dimen name="hub_image_size">60dp</dimen>
+    <dimen name="hub_image_radius">12dp</dimen>
+    <dimen name="hub_preview_height">160dp</dimen>
+    <dimen name="hub_state_min_height">240dp</dimen>
+    <dimen name="hub_progress_height">3dp</dimen>
+</resources>

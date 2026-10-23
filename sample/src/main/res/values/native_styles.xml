@@ -1,0 +1,9 @@
+<resources>
+    <style name="NativeGallery.DatePickerSpinner" parent="@android:style/Widget.Material.DatePicker">
+        <item name="android:datePickerMode">spinner</item>
+        <item name="android:calendarViewShown">false</item>
+    </style>
+    <style name="NativeGallery.TimePickerSpinner" parent="@android:style/Widget.Material.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+    </style>
+</resources>

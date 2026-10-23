@@ -1,0 +1,45 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name=".DemoApplication"
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AndroidBaseKit">
+        <activity
+            android:name=".view.activity.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.WelcomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.GuideActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.DemoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.NativeViewsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.SystemUiDemoActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".view.activity.NativeViewDemoActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+    </application>
+</manifest>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Semantic colors: applications may override the same resource names. -->
+    <color name="color_primary">#BBC3FF</color>
+    <color name="color_primary_variant">#939FFF</color>
+    <color name="color_on_primary">#14206B</color>
+    <color name="color_secondary">#80D5CD</color>
+    <color name="color_on_secondary">#003734</color>
+    <color name="color_main_title">#F1F1F1</color>
+    <color name="color_sub_title">#C6C6C6</color>
+    <color name="color_body">#E0E0E0</color>
+    <color name="color_hint">#AEAEAE</color>
+    <color name="color_disabled">#777777</color>
+    <color name="color_link">#BBC3FF</color>
+    <color name="color_background">#121212</color>
+    <color name="color_surface">#1E1E1E</color>
+    <color name="color_background_secondary">#292929</color>
+    <color name="color_divider">#383838</color>
+    <color name="color_border">#666666</color>
+    <color name="color_icon">#C6C6C6</color>
+    <color name="color_icon_secondary">#AEAEAE</color>
+    <color name="color_success">#7FD99E</color>
+    <color name="color_success_background">#113820</color>
+    <color name="color_warning">#FFB95C</color>
+    <color name="color_warning_background">#3B280D</color>
+    <color name="color_error">#FFB4AB</color>
+    <color name="color_error_background">#410E0B</color>
+    <color name="color_info">#9ACBFF</color>
+    <color name="color_info_background">#102D47</color>
+    <color name="color_scrim">#99000000</color>
+</resources>

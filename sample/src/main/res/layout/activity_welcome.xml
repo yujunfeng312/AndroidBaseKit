@@ -1,0 +1,13 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+    <androidx.viewpager2.widget.ViewPager2 android:id="@+id/welcome_pager"
+        android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+    <TextView android:id="@+id/page_indicator"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:gravity="center" android:accessibilityLiveRegion="polite"
+        android:textSize="@dimen/template_body_size" />
+    <com.google.android.material.button.MaterialButton android:id="@+id/start_button"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_margin="@dimen/template_spacing" android:text="@string/template_next" />
+</LinearLayout>

@@ -1,0 +1,386 @@
+<resources>
+<string name="app_name">AndroidBaseKit 示例</string>
+<string name="local_item">本地条目 %1$d</string>
+<string name="return_result">返回示例结果</string>
+<string name="result_sample">Activity Result 已返回</string>
+<string name="result_value">结果：%1$s</string>
+<string name="go_back">返回</string>
+<string name="refresh_failed">刷新失败，请重试。</string>
+<string name="demo_error">示例错误，点击重试恢复本地数据。</string>
+
+
+    <!-- 原生控件目录、属性示例和动态提示。 -->
+    <string name="native_category_1">文本与输入</string>
+    <string name="native_title_text_view">文本控件（TextView）</string>
+    <string name="native_properties_text_view">文字大小（textSize） / 文字颜色（textColor） / 最大行数（maxLines） / 省略方式（ellipsize） / 对齐方式（gravity）</string>
+    <string name="native_title_edit_text">文本输入框（EditText）</string>
+    <string name="native_properties_edit_text">输入类型（inputType） / 输入提示（hint） / 最大长度（maxLength） / 单行输入（singleLine）</string>
+    <string name="native_title_auto_complete_text_view">自动补全输入框（AutoCompleteTextView）</string>
+    <string name="native_properties_auto_complete_text_view">补全触发字符数（threshold） / 补全提示（completionHint） / 下拉框宽度（dropDownWidth）</string>
+    <string name="native_title_multi_auto_complete_text_view">多项补全输入框（MultiAutoCompleteTextView）</string>
+    <string name="native_properties_multi_auto_complete_text_view">逗号分词器（CommaTokenizer） / 补全触发字符数（threshold）</string>
+    <string name="native_title_search_view">搜索框（SearchView）</string>
+    <string name="native_properties_search_view">折叠状态（iconified） / 搜索提示（queryHint） / 显示提交按钮（submitButtonEnabled）</string>
+    <string name="native_title_checked_text_view">可勾选文本（CheckedTextView）</string>
+    <string name="native_properties_checked_text_view">选中状态（checked） / 勾选图标（checkMarkDrawable）</string>
+    <string name="native_category_2">按钮与选择</string>
+    <string name="native_title_button">按钮（Button）</string>
+    <string name="native_properties_button">字母全部大写（textAllCaps） / 文字附属图标（compoundDrawables） / 启用状态（enabled）</string>
+    <string name="native_title_image_button">图片按钮（ImageButton）</string>
+    <string name="native_properties_image_button">图片来源（src） / 图片缩放方式（scaleType） / 背景着色（backgroundTint）</string>
+    <string name="native_title_check_box">复选框（CheckBox）</string>
+    <string name="native_properties_check_box">选中状态（checked） / 按钮着色（buttonTint） / 文本（text）</string>
+    <string name="native_title_radio_button">单选按钮（RadioButton）</string>
+    <string name="native_properties_radio_button">选中状态（checked） / 按钮着色（buttonTint）</string>
+    <string name="native_title_radio_group">单选组（RadioGroup）</string>
+    <string name="native_properties_radio_group">排列方向（orientation） / 选中按钮（checkedButton）</string>
+    <string name="native_title_switch">开关（Switch）</string>
+    <string name="native_properties_switch">显示开关文字（showText） / 开启文字（textOn） / 关闭文字（textOff） / 选中状态（checked）</string>
+    <string name="native_title_toggle_button">状态切换按钮（ToggleButton）</string>
+    <string name="native_properties_toggle_button">开启文字（textOn） / 关闭文字（textOff） / 选中状态（checked）</string>
+    <string name="native_title_spinner">下拉选择器（Spinner）</string>
+    <string name="native_properties_spinner">下拉菜单模式（MODE_DROPDOWN） / 对话框模式（MODE_DIALOG） / 默认选中位置（selection）</string>
+    <string name="native_title_number_picker">数字选择器（NumberPicker）</string>
+    <string name="native_properties_number_picker">最小值（minValue） / 最大值（maxValue） / 循环滚动（wrapSelectorWheel） / 显示选项（displayedValues）</string>
+    <string name="native_category_3">进度与评分</string>
+    <string name="native_title_progress_bar">进度条（ProgressBar）</string>
+    <string name="native_properties_progress_bar">不确定进度（indeterminate） / 当前进度（progress） / 缓冲进度（secondaryProgress）</string>
+    <string name="native_title_seek_bar">拖动进度条（SeekBar）</string>
+    <string name="native_properties_seek_bar">最大值（max） / 当前进度（progress） / 按键步进（keyProgressIncrement）</string>
+    <string name="native_title_rating_bar">星级评分条（RatingBar）</string>
+    <string name="native_properties_rating_bar">星星数量（numStars） / 评分步长（stepSize） / 只读评分（isIndicator）</string>
+    <string name="native_category_4">图片与媒体</string>
+    <string name="native_title_image_view">图片控件（ImageView）</string>
+    <string name="native_properties_image_view">图片缩放方式（scaleType） / 按比例调整尺寸（adjustViewBounds） / 图标着色（tint）</string>
+    <string name="native_title_image_switcher">图片切换器（ImageSwitcher）</string>
+    <string name="native_properties_image_switcher">子视图工厂（factory） / 进入动画（inAnimation） / 退出动画（outAnimation）</string>
+    <string name="native_title_quick_contact_badge">联系人徽章（QuickContactBadge）</string>
+    <string name="native_properties_quick_contact_badge">图片资源（imageResource） / 显示模式（mode） / 联系人宿主说明</string>
+    <string name="native_title_video_view">视频播放器（VideoView）</string>
+    <string name="native_properties_video_view">MediaController / 本地视频 / 开始（start） / 暂停（pause） / 跳转进度（seekTo）</string>
+    <string name="native_title_media_controller">媒体控制条（MediaController）</string>
+    <string name="native_properties_media_controller">控制条锚点（anchorView） / 显示（show） / 隐藏（hide）</string>
+    <string name="native_title_surface_view">独立绘制容器（SurfaceView）</string>
+    <string name="native_properties_surface_view">绘制表面持有者（holder） / 渲染生命周期说明</string>
+    <string name="native_title_texture_view">纹理绘制容器（TextureView）</string>
+    <string name="native_properties_texture_view">不透明模式（opaque） / 透明度（alpha） / 渲染生命周期说明</string>
+    <string name="native_category_5">日期与时间</string>
+    <string name="native_title_date_picker">日期选择器（DatePicker）</string>
+    <string name="native_properties_date_picker">日历模式（calendar） / 滚轮模式（spinner） / 最早日期（minDate） / 最晚日期（maxDate）</string>
+    <string name="native_title_time_picker">时间选择器（TimePicker）</string>
+    <string name="native_properties_time_picker">滚轮模式（spinner） / 表盘模式（clock） / 使用二十四小时制（is24HourView）</string>
+    <string name="native_title_calendar_view">日历（CalendarView）</string>
+    <string name="native_properties_calendar_view">每周起始日（firstDayOfWeek） / 最早日期（minDate） / 最晚日期（maxDate）</string>
+    <string name="native_title_chronometer">计时器（Chronometer）</string>
+    <string name="native_properties_chronometer">计时起点（base） / 显示格式（format） / 开始（start） / 停止（stop）</string>
+    <string name="native_title_text_clock">文本时钟（TextClock）</string>
+    <string name="native_properties_text_clock">十二小时格式（format12Hour） / 二十四小时格式（format24Hour） / 时区（timeZone）</string>
+    <string name="native_category_6">布局容器</string>
+    <string name="native_title_view">基础视图（View）</string>
+    <string name="native_properties_view">背景（background） / 透明度（alpha） / 旋转角度（rotation）</string>
+    <string name="native_title_linear_layout">线性布局（LinearLayout）</string>
+    <string name="native_properties_linear_layout">排列方向（orientation） / 空间权重（weight） / 对齐方式（gravity）</string>
+    <string name="native_title_frame_layout">帧布局（FrameLayout）</string>
+    <string name="native_properties_frame_layout">子项对齐方式（layout_gravity） / 前景（foreground）</string>
+    <string name="native_title_relative_layout">相对布局（RelativeLayout）</string>
+    <string name="native_properties_relative_layout">父容器居中（CENTER_IN_PARENT） / 与父容器末端对齐（ALIGN_PARENT_END）</string>
+    <string name="native_title_table_layout">表格布局（TableLayout）</string>
+    <string name="native_properties_table_layout">拉伸列（stretchColumns） / 收缩列（shrinkColumns） / TableRow</string>
+    <string name="native_title_table_row">表格行（TableRow）</string>
+    <string name="native_properties_table_row">列号（column） / 跨列数（span） / 空间权重（weight）</string>
+    <string name="native_title_grid_layout">网格布局（GridLayout）</string>
+    <string name="native_properties_grid_layout">列数（columnCount） / 行数（rowCount） / 对齐模式（alignmentMode）</string>
+    <string name="native_title_space">空白占位（Space）</string>
+    <string name="native_properties_space">宽度（width） / 高度（height） / 占位间距</string>
+    <string name="native_title_view_stub">延迟加载占位（ViewStub）</string>
+    <string name="native_properties_view_stub">延迟布局资源（layoutResource） / 加载布局（inflate） / 延迟加载</string>
+    <string name="native_category_7">滚动与列表</string>
+    <string name="native_title_scroll_view">垂直滚动容器（ScrollView）</string>
+    <string name="native_properties_scroll_view">填满可视区域（fillViewport） / 滚动条淡出（scrollbarFadingEnabled）</string>
+    <string name="native_title_horizontal_scroll_view">水平滚动容器（HorizontalScrollView）</string>
+    <string name="native_properties_horizontal_scroll_view">填满可视区域（fillViewport） / 显示水平滚动条（horizontalScrollBarEnabled）</string>
+    <string name="native_title_list_view">列表（ListView）</string>
+    <string name="native_properties_list_view">选择模式（choiceMode） / 分隔线高度（dividerHeight） / 列表头部（header）</string>
+    <string name="native_title_grid_view">网格列表（GridView）</string>
+    <string name="native_properties_grid_view">列数（numColumns） / 间距（spacing） / 拉伸方式（stretchMode）</string>
+    <string name="native_title_expandable_list_view">可展开列表（ExpandableListView）</string>
+    <string name="native_properties_expandable_list_view">分组（group） / 子项（child） / 展开分组（expandGroup）</string>
+    <string name="native_title_stack_view">堆叠卡片（StackView）</string>
+    <string name="native_properties_stack_view">数据适配器（adapter） / 当前页面（displayedChild） / 下一页（showNext）</string>
+    <string name="native_category_8">切换与工具栏</string>
+    <string name="native_title_adapter_view_flipper">数据驱动切换器（AdapterViewFlipper）</string>
+    <string name="native_properties_adapter_view_flipper">数据适配器（adapter） / 轮播间隔（flipInterval） / 自动播放（autoStart）</string>
+    <string name="native_title_view_animator">视图动画容器（ViewAnimator）</string>
+    <string name="native_properties_view_animator">当前页面（displayedChild） / 首次显示动画（animateFirstView）</string>
+    <string name="native_title_view_flipper">轮播容器（ViewFlipper）</string>
+    <string name="native_properties_view_flipper">轮播间隔（flipInterval） / 开始轮播（startFlipping） / 停止轮播（stopFlipping）</string>
+    <string name="native_title_view_switcher">视图切换器（ViewSwitcher）</string>
+    <string name="native_properties_view_switcher">下一页（showNext） / 上一页（showPrevious）</string>
+    <string name="native_title_text_switcher">文本切换器（TextSwitcher）</string>
+    <string name="native_properties_text_switcher">子视图工厂（factory） / 设置文本（setText） / 动画</string>
+    <string name="native_title_toolbar">工具栏（Toolbar）</string>
+    <string name="native_properties_toolbar">标题（title） / 副标题（subtitle） / 导航图标（navigationIcon） / 菜单（menu）</string>
+    <string name="native_title_action_menu_view">操作菜单（ActionMenuView）</string>
+    <string name="native_properties_action_menu_view">菜单（menu） / 菜单展示方式（showAsAction） / 点击回调</string>
+    <string name="native_category_9">网页</string>
+    <string name="native_title_web_view">网页控件（WebView）</string>
+    <string name="native_properties_web_view">本地 HTML / 文字缩放（textZoom） / 脚本（JavaScript） 默认关闭</string>
+    <string name="native_category_10">旧版控件</string>
+    <string name="native_title_tab_host">选项卡容器（TabHost）</string>
+    <string name="native_properties_tab_host">初始化（setup） / TabWidget / 选项卡内容（tabContent）</string>
+    <string name="native_title_tab_widget">选项卡栏（TabWidget）</string>
+    <string name="native_properties_tab_widget">排列方向（orientation） / 显示选项卡指示条（stripEnabled）</string>
+    <string name="native_title_gallery">横向画廊（Gallery）</string>
+    <string name="native_properties_gallery">间距（spacing） / 默认选中位置（selection）</string>
+    <string name="native_title_sliding_drawer">滑动抽屉（SlidingDrawer）</string>
+    <string name="native_properties_sliding_drawer">排列方向（orientation） / 抽屉把手（handle） / 抽屉内容（content）</string>
+    <string name="native_title_absolute_layout">绝对布局（AbsoluteLayout）</string>
+    <string name="native_properties_absolute_layout">布局参数（LayoutParams）.x / y</string>
+    <string name="native_title_analog_clock">指针时钟（AnalogClock）</string>
+    <string name="native_properties_analog_clock">系统默认表盘</string>
+    <string name="native_title_digital_clock">数字时钟（DigitalClock）</string>
+    <string name="native_properties_digital_clock">文字大小（textSize） / 文字颜色（textColor）</string>
+    <string name="native_title_zoom_button">缩放按钮（ZoomButton）</string>
+    <string name="native_properties_zoom_button">长按缩放间隔（zoomSpeed） / 长按（longClick） / 启用状态（enabled）</string>
+    <string name="native_title_zoom_controls">缩放控制器（ZoomControls）</string>
+    <string name="native_properties_zoom_controls">长按缩放间隔（zoomSpeed） / 启用放大（isZoomInEnabled） / 启用缩小（isZoomOutEnabled）</string>
+    <string name="native_title_two_line_list_item">双行列表项（TwoLineListItem）</string>
+    <string name="native_properties_two_line_list_item">主标题（text1） / 副标题（text2） / 两行布局</string>
+    <string name="native_title_dialer_filter">拨号过滤输入框（DialerFilter）</string>
+    <string name="native_properties_dialer_filter">显示模式（mode） / 数字输入（digits） / 字母输入（letters）</string>
+    <string name="native_catalog_row">%1$s · %2$s\n%3$s</string>
+    <string name="native_search_result">搜索：%1$s</string>
+    <string name="native_checked_attributes">选中状态（checked）=%1$s · 勾选图标（checkMarkDrawable）</string>
+    <string name="native_orientation_attributes">排列方向（orientation）=%1$s · 默认选中第二项</string>
+    <string name="native_spinner_attributes">显示模式（mode）=%1$s · 选中位置（selection）=2</string>
+    <string name="native_progress_value">当前进度（progress）：%1$d</string>
+    <string name="native_image_description">本地示例图片：%1$s</string>
+    <string name="native_image_attributes">图片缩放（scaleType）=%1$s · 按比例调整尺寸（adjustViewBounds）=开启</string>
+    <string name="native_grid_cell">格子 %1$d</string>
+    <string name="native_scroll_item">可滚动内容 %1$d</string>
+    <string name="native_card_number">卡片 %1$d</string>
+    <string name="native_grid_attributes">列数（numColumns）=%1$d · 间距=8dp · 按列宽拉伸（COLUMN_WIDTH）</string>
+    <string name="native_group_label">%1$s %2$s</string>
+    <string name="native_child_label">子项：%1$s</string>
+    <string name="native_message_number">消息 %1$d</string>
+    <string name="native_card_title">卡片 %1$d · %2$s</string>
+    <string name="native_tab_number">选项卡 %1$d</string>
+    <string name="native_tab_body">%1$s 内容</string>
+    <string name="native_click_count">点击次数：%1$d</string>
+    <string name="native_zoom_percent">缩放：%1$d%%</string>
+    <string name="native_state_on">开启</string>
+    <string name="native_state_off">关闭</string>
+    <string name="native_vertical">垂直</string>
+    <string name="native_horizontal">水平</string>
+    <string name="native_dropdown">下拉菜单</string>
+    <string name="native_dialog">对话框</string>
+    <string name="native_collapse_symbol">−</string>
+    <string name="native_expand_symbol">+</string>
+    <string name="native_scale_fit">等比居中适应（FIT_CENTER）</string>
+    <string name="native_scale_crop">居中裁切（CENTER_CROP）</string>
+    <string name="native_scale_inside">居中完整显示（CENTER_INSIDE）</string>
+    <string name="native_text_view_text_1">大号粗体文字 · AndroidBaseKit</string>
+    <string name="native_text_view_text_2">文字大小（textSize）=24sp · 文字样式（textStyle）=粗体（bold） · 文字颜色（textColor）=主色（primary）</string>
+    <string name="native_text_view_text_3">这是一段用于观察单行省略效果的长文本，调整屏幕宽度可以看到末尾省略号。</string>
+    <string name="native_text_view_text_4">最大行数（maxLines）=1 · 省略方式（ellipsize）=末尾（end）</string>
+    <string name="native_text_view_text_5">居中、可选择复制的文字</string>
+    <string name="native_text_view_text_6">对齐方式（gravity）=居中（center） · 允许选择文字（textIsSelectable）=开启（true）</string>
+    <string name="native_edit_text_text_1">普通输入，最多 12 个字符</string>
+    <string name="native_edit_text_text_2">输入类型（inputType）=文本（text） · 最大长度（maxLength）=12 · 单行输入（singleLine）=开启（true）</string>
+    <string name="native_edit_text_text_3">输入类型（inputType）=数字（number）</string>
+    <string name="native_edit_text_text_4">只输入数字</string>
+    <string name="native_edit_text_text_5">输入类型（inputType）=密码（textPassword）</string>
+    <string name="native_edit_text_text_6">密码输入</string>
+    <string name="native_edit_text_text_7">多行输入</string>
+    <string name="native_edit_text_text_8">最少行数（minLines）=3 · 对齐方式（gravity）=顶部（top） · 多行文本（textMultiLine）</string>
+    <string name="native_auto_complete_text_view_text_1">输入 A 或 B，显示补全列表</string>
+    <string name="native_auto_complete_text_view_text_2">选择一个控件</string>
+    <string name="native_auto_complete_text_view_text_3">补全触发字符数（threshold）=1 · 补全提示（completionHint）=选择一个控件</string>
+    <string name="native_multi_auto_complete_text_view_text_1">以逗号分隔多个控件名称</string>
+    <string name="native_multi_auto_complete_text_view_text_2">补全触发字符数（threshold）=1 · tokenizer=逗号分词器（CommaTokenizer）</string>
+    <string name="native_search_view_text_1">输入并提交搜索</string>
+    <string name="native_search_view_text_2">默认折叠（iconifiedByDefault）=关闭（false） · 显示提交按钮（submitButtonEnabled）=开启（true）</string>
+    <string name="native_search_view_text_3">点击图标展开</string>
+    <string name="native_search_view_text_4">默认折叠（iconifiedByDefault）=开启（true）</string>
+    <string name="native_checked_text_view_text_1">点击切换 选中状态（checked）</string>
+    <string name="native_button_text_1">原生按钮 Abc</string>
+    <string name="native_button_text_2">按钮已点击</string>
+    <string name="native_button_text_3">字母全部大写（textAllCaps）=开启（true）</string>
+    <string name="native_button_text_4">添加条目</string>
+    <string name="native_button_text_5">已添加示例条目</string>
+    <string name="native_button_text_6">字母全部大写（textAllCaps）=关闭（false） · 起始图标（drawableStart）=ic_input_add</string>
+    <string name="native_button_text_7">禁用状态</string>
+    <string name="native_button_text_8">启用状态（enabled）=关闭（false）（可用上方 启用状态（enabled） 开关覆盖）</string>
+    <string name="native_image_button_text_1">相机图标按钮</string>
+    <string name="native_image_button_text_2">图片按钮已点击</string>
+    <string name="native_image_button_text_3">图片来源（src）=ic_menu_camera · 图片缩放方式（scaleType）=居中（CENTER） · 背景着色（backgroundTint）</string>
+    <string name="native_check_box_text_1">接收通知</string>
+    <string name="native_check_box_text_2">选中状态（checked）=开启（true）</string>
+    <string name="native_check_box_text_3">主题色选项</string>
+    <string name="native_check_box_text_4">按钮着色（buttonTint）=辅助色（secondary） · 选中状态（checked）=关闭（false）</string>
+    <string name="native_radio_button_text_1">未选中选项</string>
+    <string name="native_radio_button_text_2">选中状态（checked）=关闭（false）</string>
+    <string name="native_radio_button_text_3">已选中选项</string>
+    <string name="native_radio_button_text_4">选中状态（checked）=开启（true） · 按钮着色（buttonTint）=辅助色（secondary）；互斥请使用 RadioGroup</string>
+    <string name="native_radio_group_text_1">选项 A</string>
+    <string name="native_radio_group_text_2">选项 B</string>
+    <string name="native_radio_group_text_3">选项 C</string>
+    <string name="native_switch_text_1">消息提醒</string>
+    <string name="native_switch_text_2">开</string>
+    <string name="native_switch_text_3">关</string>
+    <string name="native_switch_text_4">显示开关文字（showText）=开启（true） · 开启文字（textOn）=开 · 关闭文字（textOff）=关 · 选中状态（checked）=开启（true）</string>
+    <string name="native_switch_text_5">简洁样式</string>
+    <string name="native_switch_text_6">显示开关文字（showText）=关闭（false） · 选中状态（checked）=关闭（false）</string>
+    <string name="native_toggle_button_text_1">播放中</string>
+    <string name="native_toggle_button_text_2">已暂停</string>
+    <string name="native_toggle_button_text_3">开启文字（textOn）=播放中 · 关闭文字（textOff）=已暂停</string>
+    <string name="native_number_picker_text_1">最小值（min）=1 · 最大值（max）=10 · 当前值（value）=5 · 循环滚动（wrap）=开启（true）</string>
+    <string name="native_number_picker_text_2">小号</string>
+    <string name="native_number_picker_text_3">中号</string>
+    <string name="native_number_picker_text_4">大号</string>
+    <string name="native_number_picker_text_5">显示选项（displayedValues）=[小号, 中号, 大号] · 循环滚动（wrap）=关闭（false）</string>
+    <string name="native_progress_bar_text_1">不确定进度（indeterminate）=开启（true）（系统默认圆形进度）</string>
+    <string name="native_progress_bar_text_2">水平（horizontal） · 最大值（max）=100 · 当前进度（progress）=45 · 缓冲进度（secondaryProgress）=75</string>
+    <string name="native_progress_bar_text_3">点击增加 当前进度（progress）</string>
+    <string name="native_progress_bar_text_4">进度 +10</string>
+    <string name="native_seek_bar_text_1">最大值（max）=100 · 当前进度（progress）=35 · 按键步进（keyProgressIncrement）=5</string>
+    <string name="native_rating_bar_text_1">星星数量（numStars）=5 · 评分步长（stepSize）=0.5 · 评分（rating）=3.5</string>
+    <string name="native_rating_bar_text_2">只读评分（isIndicator）=开启（true） · 小号评分样式（ratingBarStyleSmall） · 评分（rating）=4</string>
+    <string name="native_image_view_text_1">着色图标</string>
+    <string name="native_image_view_text_2">图标着色（tint）=辅助色（secondary）</string>
+    <string name="native_image_switcher_text_1">切换图片示例</string>
+    <string name="native_image_switcher_text_2">子视图工厂（factory）=ImageView · 淡入（fade_in） / 淡出（fade_out）</string>
+    <string name="native_image_switcher_text_3">设置图片资源（setImageResource）</string>
+    <string name="native_image_switcher_text_4">切换图片</string>
+    <string name="native_quick_contact_badge_text_1">联系人徽章</string>
+    <string name="native_quick_contact_badge_text_2">图片资源（imageResource）=ic_menu_myplaces · 显示模式（mode）=大尺寸模式（MODE_LARGE）</string>
+    <string name="native_quick_contact_badge_text_3">联系人快速操作需要真实联系人 URI 和系统联系人应用。本例展示控件外观，不读取通讯录；业务接入后调用 assignContactUri(uri)。</string>
+    <string name="native_media_controller_text_1">VideoView + MediaController · 本地 H.264 测试片 · 控制条锚点（anchorView）=videoFrame</string>
+    <string name="native_media_controller_text_2">开始（start） / 暂停（pause） / 跳转进度（seekTo）</string>
+    <string name="native_play">播放</string>
+    <string name="native_pause">暂停</string>
+    <string name="native_restart_video">回到开头</string>
+    <string name="native_media_controller_text_6">内置 6 秒无声测试片，无需网络；点击播放后显示原生浮动控制条，可拖动进度。离开页面会关闭控制条、暂停并释放播放器。</string>
+    <string name="native_surface_view_text_1">独立绘制容器（SurfaceView）· 绘制表面持有者（SurfaceHolder）</string>
+    <string name="native_surface_view_text_2">真实独立 Surface。未接入绘制器时可能显示空白或黑色；绘制资源应在 surfaceCreated 创建、surfaceDestroyed 释放，不能将占位区域当作播放结果。</string>
+    <string name="native_texture_view_text_1">不透明模式（opaque）=关闭（false） · 透明度（alpha）=0.7</string>
+    <string name="native_texture_view_text_2">真实纹理容器。未连接生产者时透明；接入 SurfaceTextureListener 后管理解码器或相机输出。上方 透明度（alpha） 滑条可覆盖透明度。</string>
+    <string name="native_date_picker_text_1">日期选择模式（datePickerMode）=日历模式（calendar） · 最早日期（minDate）=2020-01-01 · 最晚日期（maxDate）=2030-12-31</string>
+    <string name="native_date_picker_text_2">日期选择模式（datePickerMode）=滚轮模式（spinner） · 显示日历（calendarViewShown）=关闭（false） · 日期范围相同</string>
+    <string name="native_time_picker_text_1">时间选择模式（timePickerMode）=表盘模式（clock） · 使用二十四小时制（is24HourView）=开启（true） · 14:30</string>
+    <string name="native_time_picker_text_2">时间选择模式（timePickerMode）=滚轮模式（spinner） · 使用二十四小时制（is24HourView）=关闭（false） · 09:15</string>
+    <string name="native_calendar_view_text_1">每周起始日（firstDayOfWeek）=星期一（MONDAY） · 日期范围 2020～2030</string>
+    <string name="native_elapsed_format" formatted="false">已用时 %s</string>
+    <string name="native_chronometer_text_2" formatted="false">显示格式（format）=已用时 %s · 计时起点（base）=系统运行时间（elapsedRealtime）</string>
+    <string name="native_chronometer_text_3">开始（start） / 停止（stop） / 重置计时起点（setBase）</string>
+    <string name="native_chronometer_text_4">开始</string>
+    <string name="native_chronometer_text_5">停止</string>
+    <string name="native_chronometer_text_6">归零</string>
+    <string name="native_text_clock_text_1">hh:mm:ss a</string>
+    <string name="native_text_clock_text_2">HH:mm:ss</string>
+    <string name="native_text_clock_text_3">十二小时格式（format12Hour）=hh:mm:ss a · 二十四小时格式（format24Hour）=HH:mm:ss · 本地时区</string>
+    <string name="native_text_clock_text_4">HH:mm:ss \'UTC\'</string>
+    <string name="native_text_clock_text_5">时区（timeZone）=协调世界时（UTC）</string>
+    <string name="native_view_text_1">背景（background）=主色（primary）</string>
+    <string name="native_view_text_2">背景（background）=辅助色（secondary） · 旋转角度（rotation）=4°</string>
+    <string name="native_linear_layout_text_1">排列方向（orientation）=垂直（vertical）</string>
+    <string name="native_linear_layout_text_2">第一项</string>
+    <string name="native_linear_layout_text_3">第二项</string>
+    <string name="native_linear_layout_text_4">空间权重（weight）=1</string>
+    <string name="native_linear_layout_text_5">空间权重（weight）=2</string>
+    <string name="native_linear_layout_text_6">排列方向（orientation）=水平（horizontal） · 宽度（width）=0 · 子项空间权重（layout_weight）=1:2</string>
+    <string name="native_frame_layout_text_1">居中（CENTER）</string>
+    <string name="native_frame_layout_text_2">末端（END） | 底部（BOTTOM）</string>
+    <string name="native_frame_layout_text_3">子项 子项对齐方式（layout_gravity） · 前景（foreground）=系统相框（picture_frame）</string>
+    <string name="native_relative_layout_text_1">父容器居中（CENTER_IN_PARENT）</string>
+    <string name="native_relative_layout_text_2">与父容器末端对齐（ALIGN_PARENT_END）</string>
+    <string name="native_relative_layout_text_3">添加布局规则（addRule）(父容器居中（CENTER_IN_PARENT） / 与父容器末端对齐（ALIGN_PARENT_END）)</string>
+    <string name="native_table_row_text_1">名称</string>
+    <string name="native_table_row_text_2">类型</string>
+    <string name="native_table_row_text_3">数量</string>
+    <string name="native_table_row_text_4">文本控件（TextView）</string>
+    <string name="native_table_row_text_5">文本</string>
+    <string name="native_table_row_text_6">3</string>
+    <string name="native_table_row_text_7">按钮（Button）</string>
+    <string name="native_table_row_text_8">按钮</string>
+    <string name="native_table_row_text_9">2</string>
+    <string name="native_table_row_text_10">跨列数（layout_span）=3：横跨三列</string>
+    <string name="native_table_row_text_11">表格布局（TableLayout）· 拉伸和收缩所有列（stretchAllColumns / shrinkAllColumns）· 表格行跨列数（TableRow.span）=3</string>
+    <string name="native_grid_layout_text_1">列数（columnCount）=2 · 行数（rowCount）=3 · 列布局规格（columnSpec）.空间权重（weight）=1 · 使用默认间距（useDefaultMargins）=开启（true）</string>
+    <string name="native_space_text_1">上方内容</string>
+    <string name="native_space_text_2">下方内容</string>
+    <string name="native_space_text_3">Space 高度（height）=48dp · 不绘制，只占位</string>
+    <string name="native_view_stub_text_1">加载 ViewStub</string>
+    <string name="native_view_stub_text_2">已加载</string>
+    <string name="native_view_stub_text_3">延迟布局资源（layoutResource）=native_stub_content · 点击后 加载布局（inflate）（仅一次）</string>
+    <string name="native_scroll_view_text_1">填满可视区域（fillViewport）=开启（true） · 滚动条淡出（scrollbarFadingEnabled）=关闭（false） · 固定高度</string>
+    <string name="native_horizontal_scroll_view_text_1">填满可视区域（fillViewport）=开启（true） · 显示水平滚动条（horizontalScrollBarEnabled）=开启（true）</string>
+    <string name="native_list_view_text_1">列表头部（不可选择）</string>
+    <string name="native_list_view_text_2">选择模式（choiceMode）=单选模式（singleChoice） · 分隔线高度（dividerHeight）=2dp · 添加列表头部（addHeaderView）</string>
+    <string name="native_expandable_list_view_text_1">文本控件</string>
+    <string name="native_expandable_list_view_text_2">按钮控件</string>
+    <string name="native_expandable_list_view_text_3">文本输入框（EditText）</string>
+    <string name="native_expandable_list_view_text_4">图片按钮（ImageButton）</string>
+    <string name="native_expandable_list_view_text_5">复选框（CheckBox）</string>
+    <string name="native_expandable_list_view_text_6">BaseExpandableListAdapter · 展开分组（expandGroup）(0) · 点击分组折叠/展开</string>
+    <string name="native_view_switcher_text_1">第一页</string>
+    <string name="native_view_switcher_text_2">第二页</string>
+    <string name="native_view_switcher_text_3">当前页面（displayedChild）=0 · 首次显示动画（animateFirstView）=关闭（false） · 左侧滑入（slide_in_left）/out_right</string>
+    <string name="native_view_switcher_text_4">下一页（showNext） / 上一页（showPrevious）</string>
+    <string name="native_view_switcher_text_5">下一页</string>
+    <string name="native_view_switcher_text_6">上一页</string>
+    <string name="native_view_switcher_text_7">轮播间隔（flipInterval）=1800ms</string>
+    <string name="native_view_switcher_text_8">自动轮播</string>
+    <string name="native_view_switcher_text_9">停止轮播</string>
+    <string name="native_text_switcher_text_1">第一条消息</string>
+    <string name="native_text_switcher_text_2">子视图工厂（factory）=TextView · 淡入（fade_in） / 淡出（fade_out）</string>
+    <string name="native_text_switcher_text_3">设置文本（setText）</string>
+    <string name="native_text_switcher_text_4">切换文本</string>
+    <string name="native_toolbar_text_1">原生工具栏（Toolbar）</string>
+    <string name="native_toolbar_text_2">标题、副标题、导航图标和操作菜单</string>
+    <string name="native_toolbar_text_3">返回</string>
+    <string name="native_toolbar_text_4">设置</string>
+    <string name="native_toolbar_text_5">关于</string>
+    <string name="native_toolbar_text_6">标题（title） / 副标题（subtitle） · 导航图标（navigationIcon） · 空间足够时显示菜单项（SHOW_AS_ACTION_IF_ROOM）</string>
+    <string name="native_action_menu_view_text_1">新增</string>
+    <string name="native_action_menu_view_text_2">更多选项</string>
+    <string name="native_action_menu_view_text_3">菜单（menu）.add · 始终显示菜单项（SHOW_AS_ACTION_ALWAYS） / 溢出菜单（overflow）</string>
+    <string name="native_adapter_view_flipper_text_1">数据适配器（adapter）=BaseAdapter · 当前页面（displayedChild）=1</string>
+    <string name="native_adapter_view_flipper_text_2">下一张</string>
+    <string name="native_adapter_view_flipper_text_3">上一张</string>
+    <string name="native_adapter_view_flipper_text_4">轮播间隔（flipInterval）=2000 · 自动播放（autoStart）=关闭（false）；本页手动切换，自动轮播见 ViewFlipper。</string>
+    <string name="native_web_view_text_1" formatted="false">&lt;html&gt;&lt;meta name=\'viewport\' content=\'width=device-width,initial-scale=1\'&gt;&lt;body&gt;&lt;h2&gt;网页控件（WebView）&lt;/h2&gt;&lt;p&gt;本地 HTML，无网络、无 JavaScript。&lt;/p&gt;&lt;input placeholder=\'HTML 输入框\'&gt;&lt;p&gt;文字缩放（textZoom）=110%&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    <string name="native_web_view_text_2">加载本地网页（loadDataWithBaseURL） · 文字缩放（textZoom）=110 · 脚本（JavaScript）=关闭（false） · 阻止网络加载（blockNetworkLoads）=开启（true）</string>
+    <string name="native_web_view_text_3">设置文字缩放（setTextZoom）</string>
+    <string name="native_web_view_text_4" formatted="false">文字 100%</string>
+    <string name="native_web_view_text_5" formatted="false">文字 150%</string>
+    <string name="native_legacy_notice">旧版控件：用于认识与维护旧代码，新页面优先选择现代控件。</string>
+    <string name="native_tab_widget_text_1">TabHost.初始化（setup） · TabWidget.显示选项卡指示条（stripEnabled）=开启（true） · 当前选项卡（currentTab）=1</string>
+    <string name="native_gallery_text_1">间距（spacing）=16dp · 默认选中位置（selection）=2</string>
+    <string name="native_sliding_drawer_text_1">排列方向（orientation）=垂直（vertical） · 抽屉把手（handle） / 抽屉内容（content） · 点击或拖动把手</string>
+    <string name="native_absolute_layout_text_1">横坐标=16，纵坐标=8</string>
+    <string name="native_absolute_layout_text_2">横坐标=80，纵坐标=80</string>
+    <string name="native_absolute_layout_text_3">绝对布局参数：宽度、高度、横坐标、纵坐标（AbsoluteLayout.LayoutParams）</string>
+    <string name="native_analog_clock_text_1">系统默认表盘（API 23 起废弃）</string>
+    <string name="native_digital_clock_text_1">文字大小（textSize）=28sp · 文字颜色（textColor）=辅助色（secondary）（API 17 起废弃）</string>
+    <string name="native_zoom_button_text_1">缩放按钮</string>
+    <string name="native_zoom_button_text_2">长按缩放间隔（zoomSpeed）=300ms · 长按重复触发点击</string>
+    <string name="native_zoom_controls_text_1">长按缩放间隔（zoomSpeed）=300 · 启用放大（isZoomInEnabled）=开启（true） · 启用缩小（isZoomOutEnabled）=开启（true）</string>
+    <string name="native_two_line_list_item_text_1">主标题 · 主标题（text1）</string>
+    <string name="native_two_line_list_item_text_2">副标题和说明 · 副标题（text2）</string>
+    <string name="native_two_line_list_item_text_3">android.R.layout.simple_list_item_2 · 主标题（text1） / 副标题（text2）</string>
+    <string name="native_dialer_filter_text_1">显示模式（mode）=数字与字母模式（DIGITS_AND_LETTERS） · 输入字母/数字查看过滤</string>
+    <string name="native_common_panel">通用属性 · 实时调整下方所有示例</string>
+    <string name="native_enabled_label">启用控件（enabled）</string>
+    <string name="native_alpha_label">透明度百分比（alpha）</string>
+    <string name="native_padding_label">追加内边距（padding，dp）</string>
+    <string name="native_reset">重置属性和示例</string>
+    <string name="native_property_value">%1$s：%2$d</string>
+    <string name="native_entry_description">%1$s\n%2$s</string>
+    <string name="native_completion_1">安卓 Android</string>
+    <string name="native_completion_2">按钮 Button</string>
+    <string name="native_completion_3">日历 Calendar</string>
+    <string name="native_completion_4">对话框 Dialog</string>
+    <string name="native_completion_5">输入框 EditText</string>
+    <string name="native_completion_6">帧布局 FrameLayout</string>
+</resources>

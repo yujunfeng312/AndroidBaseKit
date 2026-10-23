@@ -1,0 +1,10 @@
+<resources>
+    <string-array name="native_completion_items">
+        <item>@string/native_completion_1</item>
+        <item>@string/native_completion_2</item>
+        <item>@string/native_completion_3</item>
+        <item>@string/native_completion_4</item>
+        <item>@string/native_completion_5</item>
+        <item>@string/native_completion_6</item>
+    </string-array>
+</resources>

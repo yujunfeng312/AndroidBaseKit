@@ -1,0 +1,51 @@
+<resources>
+    <string name="system_ui_title">系统与窗口设置</string>
+    <string name="system_ui_intro">切换选项后，直接观察屏幕顶部和底部的变化。</string>
+    <string name="system_ui_preview_title">实时系统栏演示</string>
+    <string name="system_ui_scope">设置仅影响当前演示窗口，返回其他页面后使用各自的窗口设置。</string>
+    <string name="system_ui_enter_immersive">一键进入沉浸式</string>
+    <string name="system_ui_show_bars">显示系统栏</string>
+    <string name="system_ui_reset">恢复默认设置</string>
+    <string name="system_ui_background">背景延伸到系统栏下方</string>
+    <string name="system_ui_background_hint">打开后可通过透明底色查看延伸效果，操作区域始终避开系统栏和屏幕开孔。</string>
+    <string name="system_ui_bars_section">状态栏与导航栏</string>
+    <string name="system_ui_status_color">状态栏底色</string>
+    <string name="system_ui_navigation_color">导航栏底色</string>
+    <string name="system_ui_hide_status">隐藏状态栏</string>
+    <string name="system_ui_hide_navigation">隐藏导航栏</string>
+    <string name="system_ui_auto_icons">根据底色自动匹配图标明暗</string>
+    <string name="system_ui_dark_status_icons">使用深色状态栏图标</string>
+    <string name="system_ui_dark_navigation_icons">使用深色导航栏图标</string>
+    <string name="system_ui_nav_icons_unsupported">当前系统低于 Android 8.0，不支持深色导航栏图标。</string>
+    <string name="system_ui_platform_hint">沉浸式下可从屏幕边缘滑动临时唤出系统栏。手势导航、键盘和多窗口可能影响实际效果。</string>
+    <string name="system_ui_actual_state">实际显示：状态栏%1$s · 导航栏%2$s\n内容避让：上 %3$d dp · 下 %4$d dp</string>
+    <string name="system_ui_state_pending">正在读取系统栏状态…</string>
+    <string name="system_ui_visible">显示</string>
+    <string name="system_ui_hidden">隐藏</string>
+    <string name="system_ui_screen_section">屏幕与亮度</string>
+    <string name="system_ui_keep_awake">当前页面保持亮屏</string>
+    <string name="system_ui_follow_brightness">亮度跟随系统</string>
+    <string name="system_ui_brightness_value">当前窗口亮度：%1$d%%</string>
+    <string name="system_ui_brightness_system">当前窗口亮度：跟随系统</string>
+    <string name="system_ui_screen_hint">关闭跟随系统后可调节此窗口的亮度，不修改手机的全局亮度设置。</string>
+    <string name="system_ui_keyboard_section">软键盘与内容避让</string>
+    <string name="system_ui_input_hint">输入文字，观察键盘弹出后的布局</string>
+    <string name="system_ui_show_keyboard">显示软键盘</string>
+    <string name="system_ui_hide_keyboard">收起软键盘</string>
+    <string name="system_ui_settings_section">系统设置入口</string>
+    <string name="system_ui_settings_hint">下面的按钮仅打开系统页面，具体设置由你在系统页面中选择。</string>
+    <string name="system_ui_display_settings">显示设置</string>
+    <string name="system_ui_app_settings">当前应用设置与权限</string>
+    <string name="system_ui_notification_settings">当前应用通知设置</string>
+    <string name="system_ui_settings_unavailable">当前设备无法打开此设置页面</string>
+    <string name="system_ui_color_transparent">透明</string>
+    <string name="system_ui_color_light">浅色</string>
+    <string name="system_ui_color_blue">靛蓝</string>
+    <string name="system_ui_color_dark">深色</string>
+    <string-array name="system_ui_color_names">
+        <item>@string/system_ui_color_transparent</item>
+        <item>@string/system_ui_color_light</item>
+        <item>@string/system_ui_color_blue</item>
+        <item>@string/system_ui_color_dark</item>
+    </string-array>
+</resources>

@@ -1,0 +1,3 @@
+-keepattributes Signature,RuntimeVisibleAnnotations,AnnotationDefault
+-keep class dev.androidbasekit.sample.model.entity.Photo { *; }
+-keep class dev.androidbasekit.sample.worker.CacheCleanupWorker { public <init>(android.content.Context, androidx.work.WorkerParameters); }
