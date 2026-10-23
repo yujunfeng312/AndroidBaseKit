@@ -1,0 +1,3 @@
+# Include the sample application's source code in GitHub language statistics.
+sample/src/**/*.java linguist-documentation=false
+sample/src/**/*.kt linguist-documentation=false
