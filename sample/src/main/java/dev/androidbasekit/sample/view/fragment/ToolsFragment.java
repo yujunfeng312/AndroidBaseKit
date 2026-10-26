@@ -8,6 +8,8 @@ import dev.androidbasekit.sample.R;
 import dev.androidbasekit.sample.databinding.FragmentToolsBinding;
 import dev.androidbasekit.storage.MemoryCache;
 import dev.androidbasekit.system.ClipboardTools;
+import dev.androidbasekit.system.permission.CameraPermissionManager;
+import dev.androidbasekit.system.permission.PermissionOptions;
 import dev.androidbasekit.ui.BaseFragment;
 import dev.androidbasekit.ui.Clicks;
 import dev.androidbasekit.ui.LoadingDialog;
@@ -49,6 +51,10 @@ public final class ToolsFragment extends BaseFragment<FragmentToolsBinding> {
             UiFeedback.snackbar(view, R.string.tools_copied);
         });
         getBinding().formatButton.setOnClickListener(view -> formatValues());
+        getBinding().permissionButton.setOnClickListener(view -> new CameraPermissionManager().request(this,
+                new PermissionOptions().explainBeforeRequest()
+                        .onGranted(permissions -> UiFeedback.toast(getBinding().getRoot(), R.string.tools_permission_granted))
+                        .onDenied((granted, denied) -> UiFeedback.toast(getBinding().getRoot(), R.string.tools_permission_denied))));
         formatValues();
         getBinding().cacheWrite.setOnClickListener(view -> {
             cache.put(CACHE_KEY, getString(R.string.tools_cache_value), 10_000L);

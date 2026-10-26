@@ -1,0 +1,8 @@
+<resources>
+    <string name="permission_explanation">This feature needs the requested permissions to continue.</string>
+    <string name="permission_camera_explanation">Camera access is needed to take photos. You can continue using other features if you decline.</string>
+    <string name="permission_settings_explanation">Some permissions can no longer be requested here. You can enable them in app settings.</string>
+    <string name="permission_continue">Continue</string>
+    <string name="permission_cancel">Cancel</string>
+    <string name="permission_settings">Open settings</string>
+</resources>

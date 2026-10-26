@@ -1,0 +1,8 @@
+<resources>
+    <string name="permission_explanation">此功能需要相关权限才能继续使用。</string>
+    <string name="permission_camera_explanation">拍照功能需要使用相机权限，拒绝后仍可使用其他功能。</string>
+    <string name="permission_settings_explanation">部分权限已无法再次弹出系统申请框，可前往应用设置手动开启。</string>
+    <string name="permission_continue">继续申请</string>
+    <string name="permission_cancel">取消</string>
+    <string name="permission_settings">前往设置</string>
+</resources>

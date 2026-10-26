@@ -114,7 +114,16 @@
 | [`Navigation`](../core/system/src/main/kotlin/dev/androidbasekit/system/Navigation.kt) | Activity 导航与结果注册工具。创建显式 Intent、注册 Activity Result；在 STARTED 之前完成注册。 |
 | [`NetworkListener`](../core/system/src/main/kotlin/dev/androidbasekit/system/NetworkStatus.kt) | 网络可用性回调。接收具备 INTERNET 且 VALIDATED 的联网状态，由 NetworkStatus 主线程交付。 |
 | [`NetworkStatus`](../core/system/src/main/kotlin/dev/androidbasekit/system/NetworkStatus.kt) | 网络可用性查询与观察。依据默认网络 INTERNET/VALIDATED 能力判断；observe 返回订阅，页面结束时 close。 |
-| [`Permissions`](../core/system/src/main/kotlin/dev/androidbasekit/system/Permissions.kt) | 运行时权限查询与申请注册入口。只注册 Activity Result launcher，何时解释或申请权限由业务页面决定。 |
+| [`PermissionManager`](../core/system/src/main/kotlin/dev/androidbasekit/system/permission/PermissionManager.kt) | 可继承的权限申请流程，支持 Activity/Fragment、生命周期和并发保护。 |
+| [`PermissionOptions`](../core/system/src/main/kotlin/dev/androidbasekit/system/permission/PermissionOptions.kt) | 单次请求的成功/拒绝回调、解释与永久拒绝弹框配置及自定义处理。 |
+| [`PermissionFlow`](../core/system/src/main/kotlin/dev/androidbasekit/system/permission/PermissionFlow.kt) | 原生权限状态机，处理解释、重试、永久拒绝与设置返回复查。 |
+| [`PermissionPrompt`](../core/system/src/main/kotlin/dev/androidbasekit/system/permission/PermissionPrompt.kt) | 一次性用户决策与原生/自定义弹框的生命周期。 |
+| [`PermissionRequestFragment`](../core/system/src/main/kotlin/dev/androidbasekit/system/permission/PermissionRequestFragment.kt) | 原生 Activity Result launcher 的无界面宿主。 |
+| [`NativePermissionSession`](../core/system/src/main/kotlin/dev/androidbasekit/system/permission/NativePermissionSession.kt) | 单次请求与宿主生命周期、弹框和回调的绑定清理。 |
+| [`CameraPermissionManager`](../core/system/src/main/kotlin/dev/androidbasekit/system/permission/CameraPermissionManager.kt) | 相机权限与专用解释文案。 |
+| [`MicrophonePermissionManager`](../core/system/src/main/kotlin/dev/androidbasekit/system/permission/MicrophonePermissionManager.kt) | 麦克风权限，支持业务继续继承。 |
+| [`NotificationPermissionManager`](../core/system/src/main/kotlin/dev/androidbasekit/system/permission/NotificationPermissionManager.kt) | Android 13+ 通知运行时权限。 |
+| [`Permissions`](../core/system/src/main/kotlin/dev/androidbasekit/system/Permissions.kt) | 运行时权限底层查询与注册兼容入口；完整流程使用 PermissionManager。 |
 | [`Screen`](../core/system/src/main/kotlin/dev/androidbasekit/system/Screen.kt) | 屏幕尺寸与单位换算工具。提供 dp/sp 转 px 和已布局窗口边界；多窗口下不假定设备屏幕就是可用窗口。 |
 | [`SystemIntents`](../core/system/src/main/kotlin/dev/androidbasekit/system/SystemIntents.kt) | 网页/分享/应用设置 Intent 与受控启动。 |
 

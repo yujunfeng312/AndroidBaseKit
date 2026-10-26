@@ -9,7 +9,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.core.content.ContextCompat
 
 /**
- * 运行时权限查询与申请注册入口。只注册 Activity Result launcher，何时解释或申请权限由业务页面决定。
+ * 运行时权限底层兼容入口。完整申请流程使用 permission.PermissionManager 及独立权限子类。
  */
 object Permissions {
     @JvmStatic fun isGranted(context: Context, permission: String): Boolean = ContextCompat.checkSelfPermission(context, permission) == PackageManager.PERMISSION_GRANTED

@@ -68,7 +68,7 @@ GIF 使用 `ImageOptions(gif = true)`；Java 可使用完整构造参数或直�
 | 工具类 / 源码 | 用途 | 常用方法 | 调用参考 |
 | --- | --- | --- | --- |
 | [Keyboard](../core/system/src/main/kotlin/dev/androidbasekit/system/Keyboard.kt) | IME 显隐 | `show()`、`hide()` | 暂无 Sample 直接调用 |
-| [Permissions](../core/system/src/main/kotlin/dev/androidbasekit/system/Permissions.kt) | 查询与注册权限申请 launcher | `isGranted()`、`register()` | 暂无 Sample 直接调用 |
+| [Permissions](../core/system/src/main/kotlin/dev/androidbasekit/system/Permissions.kt) | 查询与注册权限申请 launcher；完整流程见 [权限 Manager](PERMISSIONS.md) | `isGranted()`、`register()`、`PermissionManager.request()` | 工具页相机权限示例 |
 | [Navigation](../core/system/src/main/kotlin/dev/androidbasekit/system/Navigation.kt) | 显式 Activity Intent、注册结果回调 | `intent()`、`registerResult()` | 暂无 Sample 直接调用；Sample 直接使用官方 API |
 | [DeviceInfo](../core/system/src/main/kotlin/dev/androidbasekit/system/DeviceInfo.kt) | 应用版本、SDK、型号、厂商 | `appVersion()`、`sdk()`、`model()`、`manufacturer()` | 暂无 Sample 直接调用 |
 | [ClipboardTools](../core/system/src/main/kotlin/dev/androidbasekit/system/ClipboardTools.kt) | 用户主动复制文本、敏感预览标记 | `copyText()` | [SystemToolsTest（测试）](../core/system/src/test/kotlin/dev/androidbasekit/system/SystemToolsTest.kt) |

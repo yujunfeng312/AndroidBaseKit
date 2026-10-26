@@ -164,3 +164,15 @@ JAVA_HOME="/Applications/Android Studio.app/Contents/jbr/Contents/Home" ./gradle
 - 测试覆盖时长单位、小时边界与 Long 上限；IEC 文件大小单位、舍入与非法输入；URL 协议/主机/端口、UTF-8 编码、已有转义、fragment 与同名参数追加；文字 span 保留且不改原文；父容器布局参数与 RTL padding 保留；一次性预绘制及主动取消。
 
 本次未执行设备测试、Release 打包或外部网络联通验证。Robolectric API 28 的结果不等同于设备上的 RTL 布局、系统栏、键盘、分享面板或 Android 13+ 剪贴板预览验证。
+
+## 2026-10-26 原生权限 Manager 封装
+
+实现改用本项目的原生 Activity Result API 流程，已移除第三方权限库依赖。
+
+- `:core:system:testDebugUnitTest`：16 项测试通过，含 11 项权限状态机测试与 5 项原有系统工具测试。
+- `:sample:testDebugUnitTest --tests dev.androidbasekit.sample.PermissionManagerTest`：9 项测试通过；覆盖已授权、弹框取消、并发、原生权限结果、设置页返回、View 销毁、Activity 重建、Manifest 校验和旧版通知无需申请。
+- `:sample:assembleDebug`：通过。
+- `:core:system:lintDebug`：0 errors，1 项既有 `SystemIntents.kt` 的 UseKtx 建议。
+- `:core:system:dependencyInsight --dependency permissionx --configuration debugRuntimeClasspath`：无匹配依赖；源码与测试均无第三方权限库类型引用。
+- `git diff --check`：通过。
+- Robolectric 补充系统 CAMERA PermissionInfo，用原生 AlertDialog 与 Activity Result 分发验证入口；系统权限框、厂商永久拒绝行为仍需真机验证。

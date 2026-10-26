@@ -1,0 +1,5 @@
+<resources>
+    <string name="tools_permission_request">相机权限申请流程</string>
+    <string name="tools_permission_granted">相机权限已允许</string>
+    <string name="tools_permission_denied">未获得相机权限，可稍后再次申请</string>
+</resources>

@@ -125,7 +125,7 @@ core:ui 提供 27 个支持深色模式的语义颜色和 3 个固定色，包�
 ## System
 
 - Navigation.intent(activity,destination,extras?)、registerResult(ComponentActivity,ActivityResultCallback)，注册必须早于 STARTED。Fragment 直接用官方 registerForActivityResult。
-- Permissions.isGranted(context,permission)、register(ComponentActivity,callback)，沿用 RequestMultiplePermissions；拒绝/不再询问/设置页策略由页面处理。
+- PermissionManager：基于原生 Activity Result API 的独立权限子类、成功/拒绝回调、解释与永久拒绝弹框、设置返回复查；内置 Camera/Microphone/NotificationPermissionManager。见 [权限封装](PERMISSIONS.md)。Permissions.isGranted/register 保留底层兼容入口。
 - NetworkStatus.isOnline(context) 检查 INTERNET + VALIDATED，兼容 VPN；observe(context,listener) 返回 AutoCloseable，Main 投递，离页关闭。
 - Keyboard.show/hide(view)，Activity-backed View，用 WindowInsetsControllerCompat。
 - Screen.dp(context,float)、sp(context,float)、windowBounds(activity)；bounds 在 View 布局后读取，实际窗口尺寸，不猜测物理屏幕尺寸。
